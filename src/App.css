@@ -1,7 +1,7 @@
 body, html, .app {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar {
@@ -51,6 +51,10 @@ input[type="search"] {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
+  h1{
+    color: red;
+    font-size: 40px
+  }
 }
 
 .sidebar ul {
@@ -81,9 +85,18 @@ input[type="search"] {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 10px;
   justify-content: space-around;
+
+  a{
+    /* border: 2px black solid; */
+    border-radius: 15px;
+    background-color: whitesmoke;
+    padding: 10px;
+    
+  }
 }
 
 .video-item {
@@ -94,9 +107,24 @@ input[type="search"] {
 .video-thumbnail img {
   width: 100%;
   border-radius: 8px;
+  border: 2px black solid;
 }
 
 .video-title {
   margin-top: 8px;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 250px;
+}
+
+.video-channel{
+  margin-top: 8px;
+  font-size: 18px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.video-views{
+  margin-top: 8px;
+  font-size: 15px; 
+  font-family: 'Times New Roman', Times, serif;
+
 }
